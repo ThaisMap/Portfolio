@@ -16,9 +16,9 @@ export default function Skills() {
         </div>
         <div className={styles.coluna}>
           <p className={`text title padding-left-1`}>
-            Foco dos estudos atuais:
+            Neste momento meu foco está em
           </p>
-          <p className={`text text-large padding-left-3`}>ReactJS</p>
+          <p className={`text text-large padding-left-3`}> Estudar ReactJS</p>
         </div>
       </div>
     </section>

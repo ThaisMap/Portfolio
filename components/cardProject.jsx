@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from '../styles/cardProject.module.css';
+import React from "react";
+import styles from "../styles/cardProject.module.css";
 
 export default function CardProject(props) {
   const { project } = props;
@@ -7,13 +7,16 @@ export default function CardProject(props) {
     <section className={styles.container}>
       <h3 className={`text text-large`}>{project.name}</h3>
       <img
-        className={`padding-bottom ${styles.coverImg}`}
+        className={styles.coverImg}
         src={`images/${project.images[0]}`}
-        alt=''
+        alt={`miniatura ${project.name}`}
       />
-
-      <p className={`text`}> {project.description}</p>
-      <p className={`text`}>Tecnologias: {project.technologies}</p>
+      <p className={`text text-small ` + styles.textCenter}>
+        {project.description}
+      </p>
+      <strong className={`text ` + styles.textCenter}>
+        Tecnologias: {project.technologies}
+      </strong>
     </section>
   );
 }
