@@ -10,7 +10,7 @@ export default function Skills() {
         <div className={styles.coluna}>
           <ul className={`text padding-left-3`}>
             {habilidades.map((tech) => (
-              <SkillLevel skill={tech} />
+              <SkillLevel key={tech.tech} skill={tech} />
             ))}
           </ul>
         </div>

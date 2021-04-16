@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.flexrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carrossel {
+  margin-left: 20px;
+  width: 70%;
+  max-height: 90vh;
+}
+
+.coluna {
+  width: 25%;
+}
+
+.imagem {
+  max-width: 90%;
+}
+
+.arrows {
+  background: transparent;
+  font-size: 24px;
+  color: #444444;
+  outline: none;
+  cursor: pointer;
+}

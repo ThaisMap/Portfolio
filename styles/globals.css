@@ -27,7 +27,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -87,6 +87,9 @@ a {
   padding-bottom: 0.5em;
 }
 
+.margin-bottom {
+  margin-bottom: 0.5em;
+}
 .color-1 {
   background-color: #bbf5d6;
 }
