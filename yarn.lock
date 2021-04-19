@@ -39,11 +39,6 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@brainhubeu/react-carousel@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@brainhubeu/react-carousel/-/react-carousel-2.0.3.tgz#639da2bbb20bb988aab2156d3cfa744f05e145f3"
-  integrity sha512-wwcAdWx5K6pPpVC4oZmXZeazCxFItfyizQoG1DI1QjlC2ragMEhexFSNGjB61q0foqCM3Vxim+mKHdbbmw52AQ==
-
 "@hapi/accept@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@hapi/accept/-/accept-5.0.1.tgz#068553e867f0f63225a506ed74e899441af53e10"

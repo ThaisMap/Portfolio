@@ -1,24 +1,21 @@
 import styles from "../styles/projects/project.module.css";
-import Carousel, {
-  autoplayPlugin,
-  arrowsPlugin,
-} from "@brainhubeu/react-carousel";
-import "@brainhubeu/react-carousel/lib/style.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+
 import Link from "next/link";
 import { ImArrowLeft } from "react-icons/im";
-import {
-  FaArrowLeft,
-  FaArrowRight,
-  FaAngleLeft,
-  FaAngleRight,
-} from "react-icons/fa";
 import { projetos } from "../dados";
 import { useRouter } from "next/router";
 
 export default function Project() {
   const router = useRouter();
   const { project } = router.query;
-  const projectData = projetos.find((projeto) => projeto.page == project);
+
+  debugger;
+  const projectData = project
+    ? projetos.find((projeto) => projeto.page == project)
+    : projetos[0];
+
   return (
     <div className={"color-1 section-padding " + styles.container}>
       <Link href="/">
@@ -36,49 +33,42 @@ export default function Project() {
         </div>
         <div className={styles.carrossel}>
           <Carousel
-            plugins={[
-              "infinite",
-              {
-                resolve: autoplayPlugin,
-                options: {
-                  interval: 6000,
-                },
-              },
-              {
-                resolve: arrowsPlugin,
-                options: {
-                  arrowLeft: (
-                    <button className={styles.arrows}>
-                      <FaArrowLeft />
-                    </button>
-                  ),
-                  arrowLeftDisabled: (
-                    <button className={styles.arrows}>
-                      <FaAngleLeft />
-                    </button>
-                  ),
-                  arrowRight: (
-                    <button className={styles.arrows}>
-                      <FaArrowRight />
-                    </button>
-                  ),
-                  arrowRightDisabled: (
-                    <button className={styles.arrows}>
-                      <FaAngleRight />
-                    </button>
-                  ),
-                  addArrowClickHandler: true,
-                },
-              },
-            ]}
-            animationSpeed={1500}
+            centerMode={true}
+            centerSlidePercentage={70}
+            dynamicHeight={false}
+            showThumbs={false}
           >
             {projectData.images.map((image) => {
-              return <img className={styles.imagem} src={`images/${image}`} />;
+              return (
+                <div key={image}>
+                  <img className={styles.imagem} src={`images/${image}`} />
+                </div>
+              );
             })}
           </Carousel>
         </div>
       </div>
     </div>
   );
+}
+
+export async function getStaticProps({ params }) {
+  const { project } = params;
+  return {
+    props: { project }, // will be passed to the page component as props
+  };
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { project: "produsis" } },
+      { params: { project: "ligar" } },
+      { params: { project: "quotesweb" } },
+      { params: { project: "quotesapp" } },
+      { params: { project: "quandofoi" } },
+      { params: { project: "outlook" } },
+    ],
+    fallback: false, // See the "fallback" section below
+  };
 }
