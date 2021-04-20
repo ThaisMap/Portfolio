@@ -1,7 +1,6 @@
 import styles from "../styles/projects/project.module.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
 
+import Carousel from "../components/carousel";
 import Link from "next/link";
 import { ImArrowLeft } from "react-icons/im";
 import { projetos } from "../dados";
@@ -32,20 +31,7 @@ export default function Project() {
           </strong>
         </div>
         <div className={styles.carrossel}>
-          <Carousel
-            centerMode={true}
-            centerSlidePercentage={70}
-            dynamicHeight={false}
-            showThumbs={false}
-          >
-            {projectData.images.map((image) => {
-              return (
-                <div key={image}>
-                  <img className={styles.imagem} src={`images/${image}`} />
-                </div>
-              );
-            })}
-          </Carousel>
+          <Carousel images={projectData.images} />
         </div>
       </div>
     </div>
@@ -69,6 +55,6 @@ export async function getStaticPaths() {
       { params: { project: "quandofoi" } },
       { params: { project: "outlook" } },
     ],
-    fallback: false, // See the "fallback" section below
+    fallback: false,
   };
 }
