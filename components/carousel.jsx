@@ -16,7 +16,7 @@ export default function Carousel(props) {
     else setCurrIndex(images.length - 1);
   }
 
-  function setImage(event) {
+  function setImage(index) {
     console.log(event);
   }
 

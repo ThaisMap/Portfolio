@@ -16,3 +16,17 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Techs and tools
+
+The following tools were applyed on this project
+
+- [React](https://pt-br.reactjs.org/)
+- NextJS
+- SSG - Static Site Generation with dynamic routes
+- Css Modules
+
+## Author
+
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/8875518?s=120&v=4" width="100px;" alt=""/> 
+Feito com ❤️ por Thais Maria 👋🏽
