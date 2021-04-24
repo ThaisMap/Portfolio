@@ -29,6 +29,11 @@ export default function Project() {
           <strong className={`text ` + styles.textCenter}>
             Tecnologias: {projectData.technologies}
           </strong>
+          {projectData.link && (
+            <a href={projectData.link}>
+              <p className={styles.link}>Acesse</p>
+            </a>
+          )}
         </div>
         <div className={styles.carrossel}>
           <Carousel images={projectData.images} />

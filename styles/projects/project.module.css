@@ -23,10 +23,10 @@
   max-height: 90vh;
 }
 
-.arrows {
-  background: transparent;
-  font-size: 24px;
+.link {
+  font-size: 16px;
+  font-weight: bold;
   color: #444444;
-  outline: none;
-  cursor: pointer;
+  margin: 1em 0;
+  text-decoration: underline;
 }

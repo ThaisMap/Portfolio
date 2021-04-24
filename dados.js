@@ -10,23 +10,26 @@ export const projetos = [
       "Produsis_3.JPG",
       "Produsis_4.JPG",
       "Produsis_5.JPG",
+      "Produsis_6.JPG",
     ],
     page: "produsis",
   },
   {
     name: "Lembre de Ligar",
     description:
-      "Esse sistema foi pensado para compartilhar informações entre uma equipe de Serviço de Atendimento ao Motorista, responsável por entrar em contato com motoristas e acompanhar o Status de suas entregas.",
-    technologies: "WPF em C# e SQLite",
+      "Esse sistema foi pensado para compartilhar informações entre uma equipe de Serviço de Atendimento ao Motorista, responsável por entrar em contato com motoristas e acompanhar o status de suas entregas.",
+    technologies: "C# - WPF, SQLite",
     images: ["Ligar_1.JPG", "Ligar_2.JPG", "Ligar_3.JPG"],
     page: "ligar",
+    link: "https://github.com/ThaisMap/LembreDeLigar",
   },
   {
     name: "My Quotes Web",
     description: "Uma página que mostra frases motivacionais a cada clique",
-    technologies: "NextJS e Firebase",
+    technologies: "NextJS, Firebase",
     images: ["myquotes_1.png", "myquotes_2.png"],
     page: "quotesweb",
+    link: "https://my-quotes-map.vercel.app/",
   },
   {
     name: "My Quotes Mobile",
@@ -40,6 +43,7 @@ export const projetos = [
       "appquotes_4.png",
     ],
     page: "quotesapp",
+    link: "https://github.com/ThaisMap/MyQuotesApp",
   },
   {
     name: "Quando foi?",
@@ -48,6 +52,7 @@ export const projetos = [
     technologies: "ReactJS",
     images: ["quandofoi_1.png", "quandofoi_2.png"],
     page: "quandofoi",
+    link: "https://github.com/ThaisMap/quando-foi-web",
   },
   {
     name: "Outlook Duplicate Remover",
@@ -56,6 +61,7 @@ export const projetos = [
     technologies: "Windows Forms em C#",
     images: ["Outlook_1.JPG", "Outlook_2.JPG"],
     page: "outlook",
+    link: "https://github.com/ThaisMap/RemoveOutlookDuplicates",
   },
 ];
 
@@ -68,25 +74,25 @@ export const habilidades = [
 
   {
     tech: "CSS",
-    perc: 40,
+    perc: 35,
     level: "Júnior",
   },
 
   {
     tech: "Javascript",
-    perc: 30,
+    perc: 40,
     level: "Júnior",
   },
 
   {
     tech: "ReactJS",
-    perc: 30,
+    perc: 40,
     level: "Júnior",
   },
 
   {
     tech: "NextJS",
-    perc: 30,
+    perc: 40,
     level: "Júnior",
   },
 
@@ -98,8 +104,13 @@ export const habilidades = [
 
   {
     tech: "Electron",
-    perc: 18,
+    perc: 20,
     level: "Básico",
+  },
+  {
+    tech: "Sqlite",
+    perc: 50,
+    level: "Intermediário",
   },
   {
     tech: "C#",

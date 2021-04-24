@@ -19,12 +19,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Techs and tools
 
-The following tools were applyed on this project
+The following tools were studied on this project
 
-- [React](https://pt-br.reactjs.org/)
+- React
 - NextJS
 - SSG - Static Site Generation with dynamic routes
 - Css Modules
+- Custom components
 
 ## Author
 
