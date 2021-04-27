@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import styles from "../styles/carousel.module.css";
-import { FaArrowLeft, FaArrowRight, FaCircle } from "react-icons/fa";
+import React, { useState } from 'react';
+import styles from '../styles/carousel.module.css';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import Dot from './Dot';
 
 export default function Carousel(props) {
   const { images } = props;
@@ -16,34 +17,21 @@ export default function Carousel(props) {
     else setCurrIndex(images.length - 1);
   }
 
-  function Dot(props) {
-    const index = props.id;
-    const onDotClick = () => {
-      setCurrIndex(index);
-    };
-    return (
-      <div
-        key={index}
-        className={index == currIndex ? styles.activedot : styles.dots}
-        onClick={onDotClick}
-      >
-        <FaCircle />
-      </div>
-    );
-  }
-
   return (
     <div className={styles.container}>
       <div
         className={styles.image}
-        style={{ backgroundImage: `url(images/${images[currIndex]})` }}
-      >
+        style={{ backgroundImage: `url(images/${images[currIndex]})` }}>
         <div className={styles.left} onClick={previousImage}>
           <FaArrowLeft />
         </div>
         <div className={styles.center}>
           {images.map((img, index) => (
-            <Dot id={index} key={img} />
+            <div
+              key={img}
+              className={index == currIndex ? styles.activedot : styles.dots}>
+              <Dot index={index} callback={setCurrIndex} />
+            </div>
           ))}
         </div>
         <div className={styles.right} onClick={nextImage}>
