@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "../styles/skills.module.css";
-import SkillLevel from "./skillLevel";
-import { habilidades } from "../dados";
+import React from 'react';
+import styles from '../styles/skills.module.css';
+import SkillLevel from './skillLevel';
+import { habilidades } from '../dados';
 export default function Skills() {
   return (
     <section className={`section-padding color-2`}>
@@ -15,10 +15,8 @@ export default function Skills() {
           </ul>
         </div>
         <div className={styles.coluna}>
-          <p className={`text title padding-left-1`}>
-            Neste momento meu foco está em
-          </p>
-          <p className={`text text-large padding-left-3`}> Estudar ReactJS</p>
+          <p className={`text title padding-left-1`}>Foco dos estudos</p>
+          <p className={`text text-large padding-left-3`}>ReactJS e CSS</p>
         </div>
       </div>
     </section>
