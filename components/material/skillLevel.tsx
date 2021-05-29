@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import theme from '../../theme';
 import { Grid, Typography } from '@material-ui/core';
+import { ISkill } from '../../types';
 
 const useStyles = makeStyles({
   root: {
@@ -11,7 +12,7 @@ const useStyles = makeStyles({
     flexGrow: 1,
   },
   label: {
-    color: theme.palette.neutral,
+    color: theme.palette.secondary.main,
     paddingLeft: theme.spacing(2),
     ...theme.typography.button,
   },
@@ -22,14 +23,14 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SkillLevel(props) {
-  const { skill } = props;
+export default function SkillLevel(props: ISkill) {
+  const { label, level } = props;
   const classes = useStyles();
   return (
     <React.Fragment>
       <Grid item xs={12} md={6} className={classes.root}>
-        <div className={classes.level} style={{ width: `${skill.perc}%` }}>
-          <Typography className={classes.label}>{skill.tech}</Typography>
+        <div className={classes.level} style={{ width: `${level}%` }}>
+          <Typography className={classes.label}>{label}</Typography>
         </div>
       </Grid>
     </React.Fragment>

@@ -22,7 +22,11 @@ function Skills() {
       </Typography>
       <Grid container spacing={2} className={styles.skillsection}>
         {habilidades.map((skill) => (
-          <SkillLevel key={skill.tech} skill={skill} />
+          <SkillLevel
+            key={skill.label}
+            label={skill.label}
+            level={skill.level}
+          />
         ))}
       </Grid>
     </Section>
