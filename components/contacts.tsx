@@ -1,14 +1,9 @@
-import {
-  Box,
-  Typography,
-  Link,
-  makeStyles,
-  createStyles,
-} from '@material-ui/core';
+import { Box, Typography, makeStyles, createStyles } from '@material-ui/core';
 import React from 'react';
 import Section from './section';
 import { ImLinkedin, ImGithub, ImMail2 } from 'react-icons/im';
 import theme from '../theme';
+import LinkMaterial from './LinkMaterial';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -32,30 +27,18 @@ function Contacts() {
         Quer conhecer melhor meu trabalho?{' '}
       </Typography>
       <Box className={styles.linksList}>
-        <Link
-          href='https://www.linkedin.com/in/thais-maria-pinto/'
-          target='_blank'
-          rel='noreferrer'
-          variant='body1'>
+        <LinkMaterial href='https://www.linkedin.com/in/thais-maria-pinto/'>
           <ImLinkedin />
           <span className={styles.icon}>LinkedIn</span>
-        </Link>
-        <Link
-          href='https://github.com/ThaisMap'
-          target='_blank'
-          rel='noreferrer'
-          variant='body1'>
+        </LinkMaterial>
+        <LinkMaterial href='https://github.com/ThaisMap'>
           <ImGithub />
           <span className={styles.icon}>GitHub</span>
-        </Link>
-        <Link
-          href='mailto:thais.map@hotmail.com'
-          target='_blank'
-          rel='noreferrer'
-          variant='body1'>
+        </LinkMaterial>
+        <LinkMaterial href='mailto:thais.map@hotmail.com'>
           <ImMail2 />
           <span className={styles.icon}>E-mail</span>
-        </Link>
+        </LinkMaterial>
       </Box>
     </Section>
   );
