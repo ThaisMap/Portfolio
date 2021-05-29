@@ -6,6 +6,7 @@ import theme from '../theme';
 import About from '../components/material/about';
 import Skills from '../components/material/skills';
 import Projects from '../components/material/projects';
+import Contacts from '../components/material/contacts';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <About />
           <Skills />
           <Projects />
+          <Contacts />
         </ThemeProvider>
       </CssBaseline>
     </>
