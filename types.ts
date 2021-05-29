@@ -8,7 +8,6 @@ export interface IProject {
 }
 
 export interface ISkill {
-  tech: string;
-  perc: number;
-  level: string;
+  label: string;
+  level: number;
 }

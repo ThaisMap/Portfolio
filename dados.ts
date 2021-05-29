@@ -69,84 +69,70 @@ export const projetos: Array<IProject> = [
 
 export const habilidades: Array<ISkill> = [
   {
-    tech: 'HTML',
-    perc: 60,
-    level: 'Intermediário',
+    label: 'HTML',
+    level: 60,
   },
 
   {
-    tech: 'CSS',
-    perc: 35,
-    level: 'Júnior',
+    label: 'CSS',
+    level: 35,
   },
 
   {
-    tech: 'Javascript',
-    perc: 40,
-    level: 'Júnior',
+    label: 'Javascript',
+    level: 40,
   },
 
   {
-    tech: 'ReactJS',
-    perc: 40,
-    level: 'Júnior',
+    label: 'ReactJS',
+    level: 40,
   },
 
   {
-    tech: 'NextJS',
-    perc: 40,
-    level: 'Júnior',
+    label: 'NextJS',
+    level: 40,
   },
 
   {
-    tech: 'React Native',
-    perc: 30,
-    level: 'Júnior',
+    label: 'React Native',
+    level: 30,
   },
 
   {
-    tech: 'NodeJS',
-    perc: 22,
-    level: 'Júnior',
+    label: 'NodeJS',
+    level: 22,
   },
 
   {
-    tech: 'Electron',
-    perc: 20,
-    level: 'Básico',
+    label: 'Electron',
+    level: 20,
   },
   {
-    tech: 'Sqlite',
-    perc: 50,
-    level: 'Intermediário',
+    label: 'Sqlite',
+    level: 50,
   },
   {
-    tech: 'C#',
-    perc: 80,
-    level: 'Avançado',
+    label: 'C#',
+    level: 80,
   },
 
   {
-    tech: 'WPF',
-    perc: 80,
-    level: 'Avançado',
+    label: 'WPF',
+    level: 80,
   },
 
   {
-    tech: 'SQL Server',
-    perc: 50,
-    level: 'Intermediário',
+    label: 'SQL Server',
+    level: 50,
   },
 
   {
-    tech: 'Entity Framework',
-    perc: 70,
-    level: 'Intermediário',
+    label: 'Entity Framework',
+    level: 70,
   },
 
   {
-    tech: 'Windows Forms',
-    perc: 75,
-    level: 'Avançado',
+    label: 'Windows Forms',
+    level: 75,
   },
 ];
