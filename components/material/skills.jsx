@@ -16,10 +16,7 @@ const useStyles = makeStyles(() =>
 function Skills() {
   const styles = useStyles();
   return (
-    <Section secondary>
-      <Typography variant='h4' gutterBottom>
-        Habilidades e interesses
-      </Typography>
+    <Section secondary title='Habilidades e interesses'>
       <Typography variant='body1' gutterBottom>
         Atualmente estou estudando React e CSS
       </Typography>
