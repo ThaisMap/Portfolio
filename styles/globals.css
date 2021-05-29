@@ -15,25 +15,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 a {
   color: inherit;
   text-decoration: none;
@@ -45,60 +26,8 @@ a {
   padding: 0;
   border: 0;
   vertical-align: baseline;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.text {
-  font-size: 14px;
-  line-height: 22px;
-  color: #444444;
-  margin-top: 0.5em;
-}
-
-.text-small {
-  font-size: 12px;
-}
-
-.text-large {
-  font-size: 18px;
-  margin-bottom: 0.5em;
-  font-weight: bold;
-}
-
-.title {
-  font-size: 32px;
-  line-height: 26px;
-  margin-bottom: 1em;
-}
-
-.padding-left-1 {
-  padding-left: 1em;
-}
-
-.padding-left-2 {
-  padding-left: 2em;
-}
-
-.padding-left-3 {
-  padding-left: 3em;
-}
-
-.padding-bottom {
-  padding-bottom: 0.5em;
-}
-
-.margin-bottom {
-  margin-bottom: 0.5em;
-}
-.color-1 {
-  background-color: #bbf5d6;
-}
-
-.color-2 {
-  background-color: #fffff7;
-}
-
-.section-padding {
-  padding: 2em;
+html {
+  background-color: #f9fbe7;
 }
