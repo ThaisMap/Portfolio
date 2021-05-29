@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from './section';
 import ProjectCard from './projectCard';
-import { projetos } from '../../dados';
+import { projetos } from '../dados';
 import { Grid } from '@material-ui/core';
 function Projects() {
   return (

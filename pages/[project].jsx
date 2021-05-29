@@ -1,23 +1,22 @@
-import styles from "../styles/projects/project.module.css";
+import styles from '../styles/projects/project.module.css';
 
-import Carousel from "../components/carousel";
-import Link from "next/link";
-import { ImArrowLeft } from "react-icons/im";
-import { projetos } from "../dados";
-import { useRouter } from "next/router";
+import Carousel from '../components/carousel';
+import Link from 'next/link';
+import { ImArrowLeft } from 'react-icons/im';
+import { projetos } from '../dados';
+import { useRouter } from 'next/router';
 
 export default function Project() {
   const router = useRouter();
   const { project } = router.query;
 
-  debugger;
   const projectData = project
     ? projetos.find((projeto) => projeto.page == project)
     : projetos[0];
 
   return (
-    <div className={"color-1 section-padding " + styles.container}>
-      <Link href="/">
+    <div className={'color-1 section-padding ' + styles.container}>
+      <Link href='/'>
         <a className={`text text-large`}>
           <ImArrowLeft className={`margin-bottom`} />
         </a>
@@ -53,12 +52,12 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { project: "produsis" } },
-      { params: { project: "ligar" } },
-      { params: { project: "quotesweb" } },
-      { params: { project: "quotesapp" } },
-      { params: { project: "quandofoi" } },
-      { params: { project: "outlook" } },
+      { params: { project: 'produsis' } },
+      { params: { project: 'ligar' } },
+      { params: { project: 'quotesweb' } },
+      { params: { project: 'quotesapp' } },
+      { params: { project: 'quandofoi' } },
+      { params: { project: 'outlook' } },
     ],
     fallback: false,
   };

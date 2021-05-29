@@ -3,8 +3,8 @@ import React from 'react';
 import Section from './section';
 import SkillLevel from './skillLevel';
 import { makeStyles, createStyles } from '@material-ui/styles';
-import theme from '../../theme';
-import { habilidades } from '../../dados';
+import theme from '../theme';
+import { habilidades } from '../dados';
 
 const useStyles = makeStyles(() =>
   createStyles({

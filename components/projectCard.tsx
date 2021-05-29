@@ -9,7 +9,7 @@ import {
   Typography,
 } from '@material-ui/core';
 import React from 'react';
-import { IProject } from '../../types';
+import { IProject } from '../types';
 import Link from 'next/link';
 
 interface CardProps {

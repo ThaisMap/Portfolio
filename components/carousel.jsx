@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/carousel.module.css';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 import Dot from './Dot';
 
 export default function Carousel(props) {
@@ -23,7 +23,7 @@ export default function Carousel(props) {
         className={styles.image}
         style={{ backgroundImage: `url(images/${images[currIndex]})` }}>
         <div className={styles.left} onClick={previousImage}>
-          <FaArrowLeft />
+          <FaChevronCircleLeft />
         </div>
         <div className={styles.center}>
           {images.map((img, index) => (
@@ -35,7 +35,7 @@ export default function Carousel(props) {
           ))}
         </div>
         <div className={styles.right} onClick={nextImage}>
-          <FaArrowRight />
+          <FaChevronCircleRight />
         </div>
       </div>
     </div>

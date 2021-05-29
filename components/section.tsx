@@ -1,7 +1,7 @@
 import { Container, Typography } from '@material-ui/core';
 import { makeStyles, createStyles } from '@material-ui/styles';
 import React, { ReactNode } from 'react';
-import theme from '../../theme';
+import theme from '../theme';
 
 const useStyles = makeStyles(() =>
   createStyles({

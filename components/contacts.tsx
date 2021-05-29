@@ -8,7 +8,7 @@ import {
 import React from 'react';
 import Section from './section';
 import { ImLinkedin, ImGithub, ImMail2 } from 'react-icons/im';
-import theme from '../../theme';
+import theme from '../theme';
 
 const useStyles = makeStyles(() =>
   createStyles({
