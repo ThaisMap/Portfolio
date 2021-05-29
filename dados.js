@@ -96,6 +96,13 @@ export const habilidades = [
     level: "Júnior",
   },
 
+
+  {
+    tech: "React Native",
+    perc: 30,
+    level: "Júnior",
+  },
+
   {
     tech: "NodeJS",
     perc: 22,
