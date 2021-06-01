@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## About the project
 
-The project means to showcase the personal and professional development skills I've been working on.
+The project is meant to showcase the personal and professional development skills I've been working on.
 
 ## Getting Started
 
@@ -22,9 +22,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 The following tools were studied on this project
 
 - React
+- Typescript
 - NextJS
 - SSG - Static Site Generation with dynamic routes
-- Css Modules
+- [Material ui](https://material-ui.com/)
 - Custom components
 
 ## Author
