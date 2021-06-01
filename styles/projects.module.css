@@ -1,8 +1,0 @@
-.projetos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0 2em;
-  gap: 2em;
-}

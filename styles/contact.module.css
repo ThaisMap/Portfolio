@@ -1,9 +1,0 @@
-.links {
-  display: flex;
-  flex-direction: row;
-  gap: 5em;
-}
-
-.links > p:hover {
-  font-weight: bold;
-}
