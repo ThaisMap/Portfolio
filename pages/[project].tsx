@@ -1,4 +1,4 @@
-import Carousel from '../components/carousel';
+import Carousel from '../components/Carousel';
 import Link from 'next/link';
 import { projetos } from '../dados';
 import { useRouter } from 'next/router';
@@ -21,7 +21,6 @@ const useStyles = makeStyles(() =>
     secondary: {
       padding: theme.spacing(3),
       backgroundColor: theme.palette.secondary.light,
-      display: 'flex',
     },
     conteudo: {
       display: 'flex',
